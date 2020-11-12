@@ -1,0 +1,21 @@
+#!/bin/sh
+
+# First pass:
+#   -E -quiet <input file> -mtune=generic -march=x86-64 -o <output file> 
+#
+# Second pass:
+#   -fpreprocessed <input file> -quiet -dumpbase <initial file> -mtune=generic -march=x86-64 -auxbase hello -o <output file>
+
+echo Called with: $@
+
+IDENT='[a-zA-Z_][a-zA-Z0-9_]*'
+
+if [ $1 = "-E" ]
+then
+    # sed -E "s/new\s+($IDENT)/(\1 \*)malloc\(sizeof\(\1\)\)/g"            $argv[3] > $argv[7]
+    # sed -E "s/class\s+($IDENT)\s*\{([^}]*)\}/typedef struct \{\2\} \1/g" $argv[3] > $argv[7]
+    # cat $7
+fi
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/cc1 $@
+
