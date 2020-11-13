@@ -5,21 +5,21 @@ auto struct Hello {
     string b;
 };
 
-initialize@Hello() {
+void initialize@Hello() {
     a = 1337;
     b = "yeet";
 }
 
-initialize@Hello(int a, string b) {
+void initialize@Hello(int a, string b) {
     self.a = a;
     self.b = b;
 }
 
-cleanup@Hello() {
+void cleanup@Hello() {
     printf("ciao!\n");
 }
 
-print@Hello() {
+void print@Hello() {
     printf("Hello { %d, %s }\n", a, b.chars);
 }
 

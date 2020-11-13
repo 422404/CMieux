@@ -3,10 +3,10 @@
 #include <string.h>
 #include <wchar.h>
 
-length@char*() {
+int length@char*() {
     return strlen(self);
 }
 
-length@wchar_t*() {
+int length@wchar_t*() {
     return wcslen(self);
 }

@@ -18,12 +18,12 @@ auto struct string<T: char | wchar_t> {
  * Example:
  *   string s = "hello";
  */
-initialize@string(T *chars) {
+void initialize@string(T *chars) {
     self.chars = chars;
     length = chars.length();
 }
 
 /** fields can be added to structs provided they are constants */
-const isWide@string<T: char> = false;
+const bool isWide@string<T: char> = false;
 
-const isWide@string<T: wchar_t> = true;
+const bool isWide@string<T: wchar_t> = true;
