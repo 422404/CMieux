@@ -14,5 +14,6 @@ A custom C preprocessor to enhance our beloved C!
 
 ### To be planned
 * extension members
+* type inference
 * exceptions
 * generics

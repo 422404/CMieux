@@ -32,6 +32,8 @@ int main(void) {
     int b = s?.length ?: 0; // b will be set to 0 as s is null
     char *chars = s?.chars; // chars will be se to null as s is null
 
+    auto infer = a; // type inferred to int
+
     {
         Hello hello2 = Hello("wow", 42);
     }
