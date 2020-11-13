@@ -11,6 +11,48 @@ import org.antlr.v4.runtime.tree.ParseTreeVisitor;
  */
 public interface CMieuxVisitor<T> extends ParseTreeVisitor<T> {
 	/**
+	 * Visit a parse tree produced by {@link CMieuxParser#autoStructDeclaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAutoStructDeclaration(CMieuxParser.AutoStructDeclarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link CMieuxParser#autoStructBody}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAutoStructBody(CMieuxParser.AutoStructBodyContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link CMieuxParser#autoStructAllocation}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitAutoStructAllocation(CMieuxParser.AutoStructAllocationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link CMieuxParser#deferStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitDeferStatement(CMieuxParser.DeferStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link CMieuxParser#freeStatement}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitFreeStatement(CMieuxParser.FreeStatementContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link CMieuxParser#methodDeclaration}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMethodDeclaration(CMieuxParser.MethodDeclarationContext ctx);
+	/**
+	 * Visit a parse tree produced by {@link CMieuxParser#methodDefinition}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitMethodDefinition(CMieuxParser.MethodDefinitionContext ctx);
+	/**
 	 * Visit a parse tree produced by {@link CMieuxParser#primaryExpression}.
 	 * @param ctx the parse tree
 	 * @return the visitor result

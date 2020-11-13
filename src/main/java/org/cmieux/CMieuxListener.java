@@ -8,6 +8,76 @@ import org.antlr.v4.runtime.tree.ParseTreeListener;
  */
 public interface CMieuxListener extends ParseTreeListener {
 	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#autoStructDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterAutoStructDeclaration(CMieuxParser.AutoStructDeclarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#autoStructDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitAutoStructDeclaration(CMieuxParser.AutoStructDeclarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#autoStructBody}.
+	 * @param ctx the parse tree
+	 */
+	void enterAutoStructBody(CMieuxParser.AutoStructBodyContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#autoStructBody}.
+	 * @param ctx the parse tree
+	 */
+	void exitAutoStructBody(CMieuxParser.AutoStructBodyContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#autoStructAllocation}.
+	 * @param ctx the parse tree
+	 */
+	void enterAutoStructAllocation(CMieuxParser.AutoStructAllocationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#autoStructAllocation}.
+	 * @param ctx the parse tree
+	 */
+	void exitAutoStructAllocation(CMieuxParser.AutoStructAllocationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#deferStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterDeferStatement(CMieuxParser.DeferStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#deferStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitDeferStatement(CMieuxParser.DeferStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#freeStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterFreeStatement(CMieuxParser.FreeStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#freeStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitFreeStatement(CMieuxParser.FreeStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#methodDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterMethodDeclaration(CMieuxParser.MethodDeclarationContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#methodDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitMethodDeclaration(CMieuxParser.MethodDeclarationContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#methodDefinition}.
+	 * @param ctx the parse tree
+	 */
+	void enterMethodDefinition(CMieuxParser.MethodDefinitionContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#methodDefinition}.
+	 * @param ctx the parse tree
+	 */
+	void exitMethodDefinition(CMieuxParser.MethodDefinitionContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#primaryExpression}.
 	 * @param ctx the parse tree
 	 */

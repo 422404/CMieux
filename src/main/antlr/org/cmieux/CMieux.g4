@@ -32,7 +32,7 @@ grammar CMieux;
 
 
 autoStructDeclaration
-    :   'auto' 'struct' Identifier autoStructBody?
+    :   'auto' 'struct' Identifier (autoStructBody ';'? | ';')
     ;
 
 autoStructBody
@@ -45,6 +45,18 @@ autoStructAllocation
 
 deferStatement
     : 'defer' statement
+    ;
+
+freeStatement
+    : 'free' Identifier ';'
+    ;
+
+methodDeclaration
+    : declarationSpecifiers? Identifier '@' typeSpecifier '(' parameterTypeList? ')' ';'
+    ;
+
+methodDefinition
+    : declarationSpecifiers? Identifier '@' typeSpecifier '(' parameterTypeList? ')' compoundStatement
     ;
 
 primaryExpression
@@ -196,9 +208,7 @@ constantExpression
     ;
 
 declaration
-    :   autoStructDeclaration initDeclaratorList ';'
-    |   autoStructDeclaration ';'
-    |   declarationSpecifiers initDeclaratorList ';'
+    :   declarationSpecifiers initDeclaratorList ';'
 	| 	declarationSpecifiers ';'
     |   staticAssertDeclaration
     ;
@@ -475,6 +485,7 @@ staticAssertDeclaration
 
 statement
     :   deferStatement
+    |   freeStatement
     |   labeledStatement
     |   compoundStatement
     |   expressionStatement
@@ -555,7 +566,10 @@ translationUnit
     ;
 
 externalDeclaration
-    :   functionDefinition
+    :   autoStructDeclaration
+    |   functionDefinition
+    |   methodDefinition
+    |   methodDeclaration
     |   declaration
     |   ';' // stray ;
     ;
