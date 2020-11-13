@@ -27,6 +27,11 @@ int main(void) {
     Hello *hello1 = new Hello;
     defer hello1.print();
 
+    int a = null ?: 1337; // a will be set to 1337
+    string *s = null;
+    int b = s?.length ?: 0; // b will be set to 0 as s is null
+    char *chars = s?.chars; // chars will be se to null as s is null
+
     {
         Hello hello2 = Hello("wow", 42);
     }
