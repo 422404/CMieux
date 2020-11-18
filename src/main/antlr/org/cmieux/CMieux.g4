@@ -63,15 +63,25 @@ autoCastExpression
     :   '(' ')' assignmentExpression
     ;
 
+lineDirective
+    :   '#' line=IntegerConstant filename=StringLiteral IntegerConstant*
+    ;
+
 primaryExpression
     :   Identifier
-    |   Constant
+    |   constant
     |   StringLiteral+
     |   '(' expression ')'
     |   genericSelection
     |   '__extension__'? '(' compoundStatement ')' // Blocks (GCC extension)
     |   '__builtin_va_arg' '(' unaryExpression ',' typeName ')'
     |   '__builtin_offsetof' '(' typeName ',' unaryExpression ')'
+    ;
+
+constant
+    :   IntegerConstant
+    |   FloatingConstant
+    |   CharacterConstant
     ;
 
 genericSelection
@@ -374,7 +384,7 @@ directDeclarator
     ;
 
 gccDeclaratorExtension
-    :   '__asm' '(' StringLiteral+ ')'
+    :   ('__asm' | '__asm__') '(' StringLiteral+ ')'
     |   gccAttributeSpecifier
     ;
 
@@ -566,8 +576,10 @@ compilationUnit
     ;
 
 translationUnit
-    :   externalDeclaration
+    :   lineDirective
+    |   externalDeclaration
     |   translationUnit externalDeclaration
+    |   translationUnit lineDirective
     ;
 
 externalDeclaration
@@ -724,14 +736,6 @@ HexQuad
     :   HexadecimalDigit HexadecimalDigit HexadecimalDigit HexadecimalDigit
     ;
 
-Constant
-    :   IntegerConstant
-    |   FloatingConstant
-    //|   EnumerationConstant
-    |   CharacterConstant
-    ;
-
-fragment
 IntegerConstant
     :   DecimalConstant IntegerSuffix?
     |   OctalConstant IntegerSuffix?
@@ -802,7 +806,6 @@ LongLongSuffix
     :   'll' | 'LL'
     ;
 
-fragment
 FloatingConstant
     :   DecimalFloatingConstant
     |   HexadecimalFloatingConstant
@@ -863,7 +866,6 @@ FloatingSuffix
     :   'f' | 'l' | 'F' | 'L'
     ;
 
-fragment
 CharacterConstant
     :   '\'' CCharSequence '\''
     |   'L\'' CCharSequence '\''
@@ -961,13 +963,13 @@ LineAfterPreprocessing
         -> skip
     ;
 
-LineDirective
-    :   '#' Whitespace? DecimalConstant Whitespace? StringLiteral ~[\r\n]*
+PragmaDirective
+    :   '#' Whitespace? 'pragma' Whitespace ~[\r\n]*
         -> skip
     ;
 
-PragmaDirective
-    :   '#' Whitespace? 'pragma' Whitespace ~[\r\n]*
+NullDirective
+    :   '#' Whitespace* Newline
         -> skip
     ;
 
