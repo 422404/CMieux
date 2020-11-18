@@ -59,6 +59,10 @@ methodDefinition
     : declarationSpecifiers? Identifier '@' typeSpecifier '(' parameterTypeList? ')' compoundStatement
     ;
 
+autoCastExpression
+    :   '(' ')' assignmentExpression
+    ;
+
 primaryExpression
     :   Identifier
     |   Constant
@@ -455,7 +459,8 @@ typedefName
     ;
 
 initializer
-    :   assignmentExpression
+    :   autoCastExpression
+    |   assignmentExpression
     |   '{' initializerList '}'
     |   '{' initializerList ',' '}'
     ;

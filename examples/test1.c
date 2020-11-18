@@ -32,6 +32,10 @@ int main(void) {
     int b = s?.length ?: 0; // b will be set to 0 as s is null
     char *chars = s?.chars; // chars will be se to null as s is null
 
+    void* someVar = NULL;
+    super_long_type_name_t *anotherVar = ()someVar; // No need to specify the
+                                                    // type in an obvious cast
+
     auto infer = a; // type inferred to int
 
     {
