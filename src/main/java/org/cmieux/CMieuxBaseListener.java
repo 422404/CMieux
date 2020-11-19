@@ -100,13 +100,145 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPrimaryExpression(CMieuxParser.PrimaryExpressionContext ctx) { }
+	@Override public void enterAutoCastExpression(CMieuxParser.AutoCastExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPrimaryExpression(CMieuxParser.PrimaryExpressionContext ctx) { }
+	@Override public void exitAutoCastExpression(CMieuxParser.AutoCastExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLineDirective(CMieuxParser.LineDirectiveContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLineDirective(CMieuxParser.LineDirectiveContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterIdentifier(CMieuxParser.IdentifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitIdentifier(CMieuxParser.IdentifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterIntegerConstant(CMieuxParser.IntegerConstantContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitIntegerConstant(CMieuxParser.IntegerConstantContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFloatingConstant(CMieuxParser.FloatingConstantContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFloatingConstant(CMieuxParser.FloatingConstantContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCharacterConstant(CMieuxParser.CharacterConstantContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCharacterConstant(CMieuxParser.CharacterConstantContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStringLiteral(CMieuxParser.StringLiteralContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStringLiteral(CMieuxParser.StringLiteralContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterParenExpression(CMieuxParser.ParenExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitParenExpression(CMieuxParser.ParenExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterGenericSelectionExpression(CMieuxParser.GenericSelectionExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGenericSelectionExpression(CMieuxParser.GenericSelectionExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBlock(CMieuxParser.BlockContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBlock(CMieuxParser.BlockContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBuiltinVaArg(CMieuxParser.BuiltinVaArgContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBuiltinVaArg(CMieuxParser.BuiltinVaArgContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBuiltinOffsetOf(CMieuxParser.BuiltinOffsetOfContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBuiltinOffsetOf(CMieuxParser.BuiltinOffsetOfContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -124,37 +256,133 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterGenericAssocList(CMieuxParser.GenericAssocListContext ctx) { }
+	@Override public void enterGenericTypeAssoc(CMieuxParser.GenericTypeAssocContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitGenericAssocList(CMieuxParser.GenericAssocListContext ctx) { }
+	@Override public void exitGenericTypeAssoc(CMieuxParser.GenericTypeAssocContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterGenericAssociation(CMieuxParser.GenericAssociationContext ctx) { }
+	@Override public void enterGenericDefaultAssoc(CMieuxParser.GenericDefaultAssocContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitGenericAssociation(CMieuxParser.GenericAssociationContext ctx) { }
+	@Override public void exitGenericDefaultAssoc(CMieuxParser.GenericDefaultAssocContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPostfixExpression(CMieuxParser.PostfixExpressionContext ctx) { }
+	@Override public void enterIncrementAfter(CMieuxParser.IncrementAfterContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPostfixExpression(CMieuxParser.PostfixExpressionContext ctx) { }
+	@Override public void exitIncrementAfter(CMieuxParser.IncrementAfterContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayAccess(CMieuxParser.ArrayAccessContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayAccess(CMieuxParser.ArrayAccessContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDecrementAfter(CMieuxParser.DecrementAfterContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDecrementAfter(CMieuxParser.DecrementAfterContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterPostfix_PrimaryExpression(CMieuxParser.Postfix_PrimaryExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitPostfix_PrimaryExpression(CMieuxParser.Postfix_PrimaryExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInlineStructInit(CMieuxParser.InlineStructInitContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInlineStructInit(CMieuxParser.InlineStructInitContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFunctionCall(CMieuxParser.FunctionCallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFunctionCall(CMieuxParser.FunctionCallContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFieldAccess(CMieuxParser.FieldAccessContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFieldAccess(CMieuxParser.FieldAccessContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterInlineExtensionStructInit(CMieuxParser.InlineExtensionStructInitContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitInlineExtensionStructInit(CMieuxParser.InlineExtensionStructInitContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFieldAcessPtr(CMieuxParser.FieldAcessPtrContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFieldAcessPtr(CMieuxParser.FieldAcessPtrContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -172,13 +400,97 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterUnaryExpression(CMieuxParser.UnaryExpressionContext ctx) { }
+	@Override public void enterUnary_PostfixExpression(CMieuxParser.Unary_PostfixExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitUnaryExpression(CMieuxParser.UnaryExpressionContext ctx) { }
+	@Override public void exitUnary_PostfixExpression(CMieuxParser.Unary_PostfixExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterIncrementBefore(CMieuxParser.IncrementBeforeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitIncrementBefore(CMieuxParser.IncrementBeforeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDecrementBefore(CMieuxParser.DecrementBeforeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDecrementBefore(CMieuxParser.DecrementBeforeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUnaryOpAndCast(CMieuxParser.UnaryOpAndCastContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUnaryOpAndCast(CMieuxParser.UnaryOpAndCastContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSizeofUnaryExpression(CMieuxParser.SizeofUnaryExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSizeofUnaryExpression(CMieuxParser.SizeofUnaryExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSizeofExpression(CMieuxParser.SizeofExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSizeofExpression(CMieuxParser.SizeofExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAlignofExpression(CMieuxParser.AlignofExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAlignofExpression(CMieuxParser.AlignofExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLabelAddress(CMieuxParser.LabelAddressContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLabelAddress(CMieuxParser.LabelAddressContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -196,73 +508,337 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterCastExpression(CMieuxParser.CastExpressionContext ctx) { }
+	@Override public void enterCast(CMieuxParser.CastContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitCastExpression(CMieuxParser.CastExpressionContext ctx) { }
+	@Override public void exitCast(CMieuxParser.CastContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterMultiplicativeExpression(CMieuxParser.MultiplicativeExpressionContext ctx) { }
+	@Override public void enterExtensionCast(CMieuxParser.ExtensionCastContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitMultiplicativeExpression(CMieuxParser.MultiplicativeExpressionContext ctx) { }
+	@Override public void exitExtensionCast(CMieuxParser.ExtensionCastContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterAdditiveExpression(CMieuxParser.AdditiveExpressionContext ctx) { }
+	@Override public void enterCastUnaryExpression(CMieuxParser.CastUnaryExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitAdditiveExpression(CMieuxParser.AdditiveExpressionContext ctx) { }
+	@Override public void exitCastUnaryExpression(CMieuxParser.CastUnaryExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterShiftExpression(CMieuxParser.ShiftExpressionContext ctx) { }
+	@Override public void enterCastDigitSequence(CMieuxParser.CastDigitSequenceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitShiftExpression(CMieuxParser.ShiftExpressionContext ctx) { }
+	@Override public void exitCastDigitSequence(CMieuxParser.CastDigitSequenceContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterRelationalExpression(CMieuxParser.RelationalExpressionContext ctx) { }
+	@Override public void enterMul_CastExpression(CMieuxParser.Mul_CastExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitRelationalExpression(CMieuxParser.RelationalExpressionContext ctx) { }
+	@Override public void exitMul_CastExpression(CMieuxParser.Mul_CastExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEqualityExpression(CMieuxParser.EqualityExpressionContext ctx) { }
+	@Override public void enterModExpression(CMieuxParser.ModExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEqualityExpression(CMieuxParser.EqualityExpressionContext ctx) { }
+	@Override public void exitModExpression(CMieuxParser.ModExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDivExpression(CMieuxParser.DivExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDivExpression(CMieuxParser.DivExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterMulExpression(CMieuxParser.MulExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitMulExpression(CMieuxParser.MulExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAddExpression(CMieuxParser.AddExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAddExpression(CMieuxParser.AddExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterSubExpression(CMieuxParser.SubExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitSubExpression(CMieuxParser.SubExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAdd_MulExpression(CMieuxParser.Add_MulExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAdd_MulExpression(CMieuxParser.Add_MulExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLShiftExpression(CMieuxParser.LShiftExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLShiftExpression(CMieuxParser.LShiftExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRShiftExpression(CMieuxParser.RShiftExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRShiftExpression(CMieuxParser.RShiftExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterShift_AddExpression(CMieuxParser.Shift_AddExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitShift_AddExpression(CMieuxParser.Shift_AddExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterGTEExpression(CMieuxParser.GTEExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGTEExpression(CMieuxParser.GTEExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLTEExpression(CMieuxParser.LTEExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLTEExpression(CMieuxParser.LTEExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLTExpression(CMieuxParser.LTExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLTExpression(CMieuxParser.LTExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterRel_ShiftExpression(CMieuxParser.Rel_ShiftExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitRel_ShiftExpression(CMieuxParser.Rel_ShiftExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterGTExpression(CMieuxParser.GTExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGTExpression(CMieuxParser.GTExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterNeqExpression(CMieuxParser.NeqExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitNeqExpression(CMieuxParser.NeqExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEq_RelExpression(CMieuxParser.Eq_RelExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEq_RelExpression(CMieuxParser.Eq_RelExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEqExpression(CMieuxParser.EqExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEqExpression(CMieuxParser.EqExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBinaryAndExpression(CMieuxParser.BinaryAndExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBinaryAndExpression(CMieuxParser.BinaryAndExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBinaryAnd_EqExpression(CMieuxParser.BinaryAnd_EqExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBinaryAnd_EqExpression(CMieuxParser.BinaryAnd_EqExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterXorExpression(CMieuxParser.XorExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitXorExpression(CMieuxParser.XorExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterXor_AndExpression(CMieuxParser.Xor_AndExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitXor_AndExpression(CMieuxParser.Xor_AndExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBinaryOr_XorExpression(CMieuxParser.BinaryOr_XorExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBinaryOr_XorExpression(CMieuxParser.BinaryOr_XorExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBinaryOrExpression(CMieuxParser.BinaryOrExpressionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBinaryOrExpression(CMieuxParser.BinaryOrExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -280,61 +856,61 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExclusiveOrExpression(CMieuxParser.ExclusiveOrExpressionContext ctx) { }
+	@Override public void enterAnd_BinaryOrExpression(CMieuxParser.And_BinaryOrExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitExclusiveOrExpression(CMieuxParser.ExclusiveOrExpressionContext ctx) { }
+	@Override public void exitAnd_BinaryOrExpression(CMieuxParser.And_BinaryOrExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterInclusiveOrExpression(CMieuxParser.InclusiveOrExpressionContext ctx) { }
+	@Override public void enterOr_AndExpression(CMieuxParser.Or_AndExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitInclusiveOrExpression(CMieuxParser.InclusiveOrExpressionContext ctx) { }
+	@Override public void exitOr_AndExpression(CMieuxParser.Or_AndExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLogicalAndExpression(CMieuxParser.LogicalAndExpressionContext ctx) { }
+	@Override public void enterOrExpression(CMieuxParser.OrExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLogicalAndExpression(CMieuxParser.LogicalAndExpressionContext ctx) { }
+	@Override public void exitOrExpression(CMieuxParser.OrExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLogicalOrExpression(CMieuxParser.LogicalOrExpressionContext ctx) { }
+	@Override public void enterTernary_OrExpression(CMieuxParser.Ternary_OrExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLogicalOrExpression(CMieuxParser.LogicalOrExpressionContext ctx) { }
+	@Override public void exitTernary_OrExpression(CMieuxParser.Ternary_OrExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterConditionalExpression(CMieuxParser.ConditionalExpressionContext ctx) { }
+	@Override public void enterTernaryExpression(CMieuxParser.TernaryExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitConditionalExpression(CMieuxParser.ConditionalExpressionContext ctx) { }
+	@Override public void exitTernaryExpression(CMieuxParser.TernaryExpressionContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -472,37 +1048,121 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTypeSpecifier(CMieuxParser.TypeSpecifierContext ctx) { }
+	@Override public void enterSimpleTypeSpecifier(CMieuxParser.SimpleTypeSpecifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTypeSpecifier(CMieuxParser.TypeSpecifierContext ctx) { }
+	@Override public void exitSimpleTypeSpecifier(CMieuxParser.SimpleTypeSpecifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStructOrUnionSpecifier(CMieuxParser.StructOrUnionSpecifierContext ctx) { }
+	@Override public void enterTypeSpecifier_Atomic(CMieuxParser.TypeSpecifier_AtomicContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStructOrUnionSpecifier(CMieuxParser.StructOrUnionSpecifierContext ctx) { }
+	@Override public void exitTypeSpecifier_Atomic(CMieuxParser.TypeSpecifier_AtomicContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterStructOrUnion(CMieuxParser.StructOrUnionContext ctx) { }
+	@Override public void enterPointerTypeSpecifier(CMieuxParser.PointerTypeSpecifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitStructOrUnion(CMieuxParser.StructOrUnionContext ctx) { }
+	@Override public void exitPointerTypeSpecifier(CMieuxParser.PointerTypeSpecifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTypeSpecifier_StructOrUnion(CMieuxParser.TypeSpecifier_StructOrUnionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTypeSpecifier_StructOrUnion(CMieuxParser.TypeSpecifier_StructOrUnionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTypeSpecifier_Enum(CMieuxParser.TypeSpecifier_EnumContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTypeSpecifier_Enum(CMieuxParser.TypeSpecifier_EnumContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTypeofTypeSpecifier(CMieuxParser.TypeofTypeSpecifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTypeofTypeSpecifier(CMieuxParser.TypeofTypeSpecifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterTypeSpecifier_TypedefName(CMieuxParser.TypeSpecifier_TypedefNameContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitTypeSpecifier_TypedefName(CMieuxParser.TypeSpecifier_TypedefNameContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterExtensionTypeSpecifier(CMieuxParser.ExtensionTypeSpecifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitExtensionTypeSpecifier(CMieuxParser.ExtensionTypeSpecifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStructSpecifier(CMieuxParser.StructSpecifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStructSpecifier(CMieuxParser.StructSpecifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterUnionSpecifier(CMieuxParser.UnionSpecifierContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitUnionSpecifier(CMieuxParser.UnionSpecifierContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -568,13 +1228,25 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterEnumSpecifier(CMieuxParser.EnumSpecifierContext ctx) { }
+	@Override public void enterEnum(CMieuxParser.EnumContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitEnumSpecifier(CMieuxParser.EnumSpecifierContext ctx) { }
+	@Override public void exitEnum(CMieuxParser.EnumContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterEnumType(CMieuxParser.EnumTypeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitEnumType(CMieuxParser.EnumTypeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -640,13 +1312,37 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterFunctionSpecifier(CMieuxParser.FunctionSpecifierContext ctx) { }
+	@Override public void enterFunctionAttribute(CMieuxParser.FunctionAttributeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitFunctionSpecifier(CMieuxParser.FunctionSpecifierContext ctx) { }
+	@Override public void exitFunctionAttribute(CMieuxParser.FunctionAttributeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterGCCFunctionAttribute(CMieuxParser.GCCFunctionAttributeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGCCFunctionAttribute(CMieuxParser.GCCFunctionAttributeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDeclSpecAttribute(CMieuxParser.DeclSpecAttributeContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDeclSpecAttribute(CMieuxParser.DeclSpecAttributeContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -676,13 +1372,121 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDirectDeclarator(CMieuxParser.DirectDeclaratorContext ctx) { }
+	@Override public void enterFunctionDeclaratorArgNamesOnly(CMieuxParser.FunctionDeclaratorArgNamesOnlyContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDirectDeclarator(CMieuxParser.DirectDeclaratorContext ctx) { }
+	@Override public void exitFunctionDeclaratorArgNamesOnly(CMieuxParser.FunctionDeclaratorArgNamesOnlyContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBitField(CMieuxParser.BitFieldContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBitField(CMieuxParser.BitFieldContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFunctionPointer(CMieuxParser.FunctionPointerContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFunctionPointer(CMieuxParser.FunctionPointerContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayDeclarator1(CMieuxParser.ArrayDeclarator1Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayDeclarator1(CMieuxParser.ArrayDeclarator1Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterVariableName(CMieuxParser.VariableNameContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitVariableName(CMieuxParser.VariableNameContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayDeclarator2(CMieuxParser.ArrayDeclarator2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayDeclarator2(CMieuxParser.ArrayDeclarator2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayDeclarator3(CMieuxParser.ArrayDeclarator3Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayDeclarator3(CMieuxParser.ArrayDeclarator3Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayDeclarator4(CMieuxParser.ArrayDeclarator4Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayDeclarator4(CMieuxParser.ArrayDeclarator4Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterParenDeclarator(CMieuxParser.ParenDeclaratorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitParenDeclarator(CMieuxParser.ParenDeclaratorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFunctionDeclarator(CMieuxParser.FunctionDeclaratorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFunctionDeclarator(CMieuxParser.FunctionDeclaratorContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -695,6 +1499,18 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitGccDeclaratorExtension(CMieuxParser.GccDeclaratorExtensionContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterGccAsmDeclarator(CMieuxParser.GccAsmDeclaratorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGccAsmDeclarator(CMieuxParser.GccAsmDeclaratorContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -736,25 +1552,25 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterNestedParenthesesBlock(CMieuxParser.NestedParenthesesBlockContext ctx) { }
+	@Override public void enterPointerComponent(CMieuxParser.PointerComponentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitNestedParenthesesBlock(CMieuxParser.NestedParenthesesBlockContext ctx) { }
+	@Override public void exitPointerComponent(CMieuxParser.PointerComponentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterPointer(CMieuxParser.PointerContext ctx) { }
+	@Override public void enterBlockPointerComponent(CMieuxParser.BlockPointerComponentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitPointer(CMieuxParser.PointerContext ctx) { }
+	@Override public void exitBlockPointerComponent(CMieuxParser.BlockPointerComponentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -772,13 +1588,25 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParameterTypeList(CMieuxParser.ParameterTypeListContext ctx) { }
+	@Override public void enterSimpleParameterList(CMieuxParser.SimpleParameterListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParameterTypeList(CMieuxParser.ParameterTypeListContext ctx) { }
+	@Override public void exitSimpleParameterList(CMieuxParser.SimpleParameterListContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterVarArgParameterList(CMieuxParser.VarArgParameterListContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitVarArgParameterList(CMieuxParser.VarArgParameterListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -796,13 +1624,25 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterParameterDeclaration(CMieuxParser.ParameterDeclarationContext ctx) { }
+	@Override public void enterSimpleParameterDeclaration(CMieuxParser.SimpleParameterDeclarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitParameterDeclaration(CMieuxParser.ParameterDeclarationContext ctx) { }
+	@Override public void exitSimpleParameterDeclaration(CMieuxParser.SimpleParameterDeclarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterAbstractParameterDeclaration(CMieuxParser.AbstractParameterDeclarationContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitAbstractParameterDeclaration(CMieuxParser.AbstractParameterDeclarationContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -844,13 +1684,133 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDirectAbstractDeclarator(CMieuxParser.DirectAbstractDeclaratorContext ctx) { }
+	@Override public void enterArrayAbstractDeclarator4(CMieuxParser.ArrayAbstractDeclarator4Context ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDirectAbstractDeclarator(CMieuxParser.DirectAbstractDeclaratorContext ctx) { }
+	@Override public void exitArrayAbstractDeclarator4(CMieuxParser.ArrayAbstractDeclarator4Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayAbstractDeclarator5(CMieuxParser.ArrayAbstractDeclarator5Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayAbstractDeclarator5(CMieuxParser.ArrayAbstractDeclarator5Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayAbstractDeclarator6(CMieuxParser.ArrayAbstractDeclarator6Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayAbstractDeclarator6(CMieuxParser.ArrayAbstractDeclarator6Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFunctionAbstractDeclarator2(CMieuxParser.FunctionAbstractDeclarator2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFunctionAbstractDeclarator2(CMieuxParser.FunctionAbstractDeclarator2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFunctionAbstractDeclarator1(CMieuxParser.FunctionAbstractDeclarator1Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFunctionAbstractDeclarator1(CMieuxParser.FunctionAbstractDeclarator1Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayAbstractDeclarator7(CMieuxParser.ArrayAbstractDeclarator7Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayAbstractDeclarator7(CMieuxParser.ArrayAbstractDeclarator7Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayAbstractDeclarator8(CMieuxParser.ArrayAbstractDeclarator8Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayAbstractDeclarator8(CMieuxParser.ArrayAbstractDeclarator8Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterParenAbstractDeclarator(CMieuxParser.ParenAbstractDeclaratorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitParenAbstractDeclarator(CMieuxParser.ParenAbstractDeclaratorContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayAbstractDeclarator1(CMieuxParser.ArrayAbstractDeclarator1Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayAbstractDeclarator1(CMieuxParser.ArrayAbstractDeclarator1Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayAbstractDeclarator2(CMieuxParser.ArrayAbstractDeclarator2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayAbstractDeclarator2(CMieuxParser.ArrayAbstractDeclarator2Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterArrayAbstractDeclarator3(CMieuxParser.ArrayAbstractDeclarator3Context ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayAbstractDeclarator3(CMieuxParser.ArrayAbstractDeclarator3Context ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -880,6 +1840,18 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterArrayOrStructInitializer(CMieuxParser.ArrayOrStructInitializerContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitArrayOrStructInitializer(CMieuxParser.ArrayOrStructInitializerContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterInitializerList(CMieuxParser.InitializerListContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -892,37 +1864,49 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDesignation(CMieuxParser.DesignationContext ctx) { }
+	@Override public void enterInitializerListItem(CMieuxParser.InitializerListItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDesignation(CMieuxParser.DesignationContext ctx) { }
+	@Override public void exitInitializerListItem(CMieuxParser.InitializerListItemContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDesignatorList(CMieuxParser.DesignatorListContext ctx) { }
+	@Override public void enterArrayElementInit(CMieuxParser.ArrayElementInitContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDesignatorList(CMieuxParser.DesignatorListContext ctx) { }
+	@Override public void exitArrayElementInit(CMieuxParser.ArrayElementInitContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterDesignator(CMieuxParser.DesignatorContext ctx) { }
+	@Override public void enterArrayIndexedInit(CMieuxParser.ArrayIndexedInitContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitDesignator(CMieuxParser.DesignatorContext ctx) { }
+	@Override public void exitArrayIndexedInit(CMieuxParser.ArrayIndexedInitContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterStructFieldInit(CMieuxParser.StructFieldInitContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitStructFieldInit(CMieuxParser.StructFieldInitContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -952,13 +1936,49 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterLabeledStatement(CMieuxParser.LabeledStatementContext ctx) { }
+	@Override public void enterAsmStatement(CMieuxParser.AsmStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitLabeledStatement(CMieuxParser.LabeledStatementContext ctx) { }
+	@Override public void exitAsmStatement(CMieuxParser.AsmStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterLabel(CMieuxParser.LabelContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitLabel(CMieuxParser.LabelContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCaseLabel(CMieuxParser.CaseLabelContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCaseLabel(CMieuxParser.CaseLabelContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterCaseDefaultLabel(CMieuxParser.CaseDefaultLabelContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitCaseDefaultLabel(CMieuxParser.CaseDefaultLabelContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -971,18 +1991,6 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitCompoundStatement(CMieuxParser.CompoundStatementContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterBlockItemList(CMieuxParser.BlockItemListContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitBlockItemList(CMieuxParser.BlockItemListContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1072,13 +2080,61 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterJumpStatement(CMieuxParser.JumpStatementContext ctx) { }
+	@Override public void enterGotoStatement(CMieuxParser.GotoStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitJumpStatement(CMieuxParser.JumpStatementContext ctx) { }
+	@Override public void exitGotoStatement(CMieuxParser.GotoStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterContinueStatement(CMieuxParser.ContinueStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitContinueStatement(CMieuxParser.ContinueStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterBreakStatement(CMieuxParser.BreakStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBreakStatement(CMieuxParser.BreakStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterReturnStatement(CMieuxParser.ReturnStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitReturnStatement(CMieuxParser.ReturnStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterGCCDynamicGotoStatement(CMieuxParser.GCCDynamicGotoStatementContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitGCCDynamicGotoStatement(CMieuxParser.GCCDynamicGotoStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1096,13 +2152,13 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterTranslationUnit(CMieuxParser.TranslationUnitContext ctx) { }
+	@Override public void enterTopLevelStatement(CMieuxParser.TopLevelStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void exitTranslationUnit(CMieuxParser.TranslationUnitContext ctx) { }
+	@Override public void exitTopLevelStatement(CMieuxParser.TopLevelStatementContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
@@ -1139,6 +2195,18 @@ public class CMieuxBaseListener implements CMieuxListener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitDeclarationList(CMieuxParser.DeclarationListContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterDigitSequence(CMieuxParser.DigitSequenceContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitDigitSequence(CMieuxParser.DigitSequenceContext ctx) { }
 
 	/**
 	 * {@inheritDoc}

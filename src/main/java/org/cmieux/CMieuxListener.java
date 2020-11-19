@@ -78,15 +78,145 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitMethodDefinition(CMieuxParser.MethodDefinitionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#primaryExpression}.
+	 * Enter a parse tree produced by {@link CMieuxParser#autoCastExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterPrimaryExpression(CMieuxParser.PrimaryExpressionContext ctx);
+	void enterAutoCastExpression(CMieuxParser.AutoCastExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#primaryExpression}.
+	 * Exit a parse tree produced by {@link CMieuxParser#autoCastExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitPrimaryExpression(CMieuxParser.PrimaryExpressionContext ctx);
+	void exitAutoCastExpression(CMieuxParser.AutoCastExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#lineDirective}.
+	 * @param ctx the parse tree
+	 */
+	void enterLineDirective(CMieuxParser.LineDirectiveContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#lineDirective}.
+	 * @param ctx the parse tree
+	 */
+	void exitLineDirective(CMieuxParser.LineDirectiveContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Identifier}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterIdentifier(CMieuxParser.IdentifierContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Identifier}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitIdentifier(CMieuxParser.IdentifierContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code IntegerConstant}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterIntegerConstant(CMieuxParser.IntegerConstantContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code IntegerConstant}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitIntegerConstant(CMieuxParser.IntegerConstantContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FloatingConstant}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterFloatingConstant(CMieuxParser.FloatingConstantContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FloatingConstant}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitFloatingConstant(CMieuxParser.FloatingConstantContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code CharacterConstant}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterCharacterConstant(CMieuxParser.CharacterConstantContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code CharacterConstant}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitCharacterConstant(CMieuxParser.CharacterConstantContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code StringLiteral}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterStringLiteral(CMieuxParser.StringLiteralContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code StringLiteral}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitStringLiteral(CMieuxParser.StringLiteralContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ParenExpression}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterParenExpression(CMieuxParser.ParenExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ParenExpression}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitParenExpression(CMieuxParser.ParenExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code GenericSelectionExpression}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterGenericSelectionExpression(CMieuxParser.GenericSelectionExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code GenericSelectionExpression}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitGenericSelectionExpression(CMieuxParser.GenericSelectionExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Block}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBlock(CMieuxParser.BlockContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Block}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBlock(CMieuxParser.BlockContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code BuiltinVaArg}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBuiltinVaArg(CMieuxParser.BuiltinVaArgContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code BuiltinVaArg}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBuiltinVaArg(CMieuxParser.BuiltinVaArgContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code BuiltinOffsetOf}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBuiltinOffsetOf(CMieuxParser.BuiltinOffsetOfContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code BuiltinOffsetOf}
+	 * labeled alternative in {@link CMieuxParser#primaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBuiltinOffsetOf(CMieuxParser.BuiltinOffsetOfContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#genericSelection}.
 	 * @param ctx the parse tree
@@ -98,35 +228,137 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitGenericSelection(CMieuxParser.GenericSelectionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#genericAssocList}.
+	 * Enter a parse tree produced by the {@code GenericTypeAssoc}
+	 * labeled alternative in {@link CMieuxParser#genericAssociation}.
 	 * @param ctx the parse tree
 	 */
-	void enterGenericAssocList(CMieuxParser.GenericAssocListContext ctx);
+	void enterGenericTypeAssoc(CMieuxParser.GenericTypeAssocContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#genericAssocList}.
+	 * Exit a parse tree produced by the {@code GenericTypeAssoc}
+	 * labeled alternative in {@link CMieuxParser#genericAssociation}.
 	 * @param ctx the parse tree
 	 */
-	void exitGenericAssocList(CMieuxParser.GenericAssocListContext ctx);
+	void exitGenericTypeAssoc(CMieuxParser.GenericTypeAssocContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#genericAssociation}.
+	 * Enter a parse tree produced by the {@code GenericDefaultAssoc}
+	 * labeled alternative in {@link CMieuxParser#genericAssociation}.
 	 * @param ctx the parse tree
 	 */
-	void enterGenericAssociation(CMieuxParser.GenericAssociationContext ctx);
+	void enterGenericDefaultAssoc(CMieuxParser.GenericDefaultAssocContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#genericAssociation}.
+	 * Exit a parse tree produced by the {@code GenericDefaultAssoc}
+	 * labeled alternative in {@link CMieuxParser#genericAssociation}.
 	 * @param ctx the parse tree
 	 */
-	void exitGenericAssociation(CMieuxParser.GenericAssociationContext ctx);
+	void exitGenericDefaultAssoc(CMieuxParser.GenericDefaultAssocContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#postfixExpression}.
+	 * Enter a parse tree produced by the {@code IncrementAfter}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterPostfixExpression(CMieuxParser.PostfixExpressionContext ctx);
+	void enterIncrementAfter(CMieuxParser.IncrementAfterContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#postfixExpression}.
+	 * Exit a parse tree produced by the {@code IncrementAfter}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitPostfixExpression(CMieuxParser.PostfixExpressionContext ctx);
+	void exitIncrementAfter(CMieuxParser.IncrementAfterContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayAccess}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayAccess(CMieuxParser.ArrayAccessContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayAccess}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayAccess(CMieuxParser.ArrayAccessContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code DecrementAfter}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterDecrementAfter(CMieuxParser.DecrementAfterContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code DecrementAfter}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitDecrementAfter(CMieuxParser.DecrementAfterContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Postfix_PrimaryExpression}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterPostfix_PrimaryExpression(CMieuxParser.Postfix_PrimaryExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Postfix_PrimaryExpression}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitPostfix_PrimaryExpression(CMieuxParser.Postfix_PrimaryExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code InlineStructInit}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterInlineStructInit(CMieuxParser.InlineStructInitContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code InlineStructInit}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitInlineStructInit(CMieuxParser.InlineStructInitContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FunctionCall}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctionCall(CMieuxParser.FunctionCallContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FunctionCall}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctionCall(CMieuxParser.FunctionCallContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FieldAccess}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterFieldAccess(CMieuxParser.FieldAccessContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FieldAccess}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitFieldAccess(CMieuxParser.FieldAccessContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code InlineExtensionStructInit}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterInlineExtensionStructInit(CMieuxParser.InlineExtensionStructInitContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code InlineExtensionStructInit}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitInlineExtensionStructInit(CMieuxParser.InlineExtensionStructInitContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FieldAcessPtr}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterFieldAcessPtr(CMieuxParser.FieldAcessPtrContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FieldAcessPtr}
+	 * labeled alternative in {@link CMieuxParser#postfixExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitFieldAcessPtr(CMieuxParser.FieldAcessPtrContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#argumentExpressionList}.
 	 * @param ctx the parse tree
@@ -138,15 +370,101 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitArgumentExpressionList(CMieuxParser.ArgumentExpressionListContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#unaryExpression}.
+	 * Enter a parse tree produced by the {@code Unary_PostfixExpression}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterUnaryExpression(CMieuxParser.UnaryExpressionContext ctx);
+	void enterUnary_PostfixExpression(CMieuxParser.Unary_PostfixExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#unaryExpression}.
+	 * Exit a parse tree produced by the {@code Unary_PostfixExpression}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitUnaryExpression(CMieuxParser.UnaryExpressionContext ctx);
+	void exitUnary_PostfixExpression(CMieuxParser.Unary_PostfixExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code IncrementBefore}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterIncrementBefore(CMieuxParser.IncrementBeforeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code IncrementBefore}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitIncrementBefore(CMieuxParser.IncrementBeforeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code DecrementBefore}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterDecrementBefore(CMieuxParser.DecrementBeforeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code DecrementBefore}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitDecrementBefore(CMieuxParser.DecrementBeforeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code UnaryOpAndCast}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnaryOpAndCast(CMieuxParser.UnaryOpAndCastContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code UnaryOpAndCast}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnaryOpAndCast(CMieuxParser.UnaryOpAndCastContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SizeofUnaryExpression}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSizeofUnaryExpression(CMieuxParser.SizeofUnaryExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SizeofUnaryExpression}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSizeofUnaryExpression(CMieuxParser.SizeofUnaryExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SizeofExpression}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSizeofExpression(CMieuxParser.SizeofExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SizeofExpression}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSizeofExpression(CMieuxParser.SizeofExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code AlignofExpression}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterAlignofExpression(CMieuxParser.AlignofExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code AlignofExpression}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitAlignofExpression(CMieuxParser.AlignofExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code LabelAddress}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLabelAddress(CMieuxParser.LabelAddressContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code LabelAddress}
+	 * labeled alternative in {@link CMieuxParser#unaryExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLabelAddress(CMieuxParser.LabelAddressContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#unaryOperator}.
 	 * @param ctx the parse tree
@@ -158,125 +476,413 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitUnaryOperator(CMieuxParser.UnaryOperatorContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#castExpression}.
+	 * Enter a parse tree produced by the {@code Cast}
+	 * labeled alternative in {@link CMieuxParser#castExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterCastExpression(CMieuxParser.CastExpressionContext ctx);
+	void enterCast(CMieuxParser.CastContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#castExpression}.
+	 * Exit a parse tree produced by the {@code Cast}
+	 * labeled alternative in {@link CMieuxParser#castExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitCastExpression(CMieuxParser.CastExpressionContext ctx);
+	void exitCast(CMieuxParser.CastContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#multiplicativeExpression}.
+	 * Enter a parse tree produced by the {@code ExtensionCast}
+	 * labeled alternative in {@link CMieuxParser#castExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterMultiplicativeExpression(CMieuxParser.MultiplicativeExpressionContext ctx);
+	void enterExtensionCast(CMieuxParser.ExtensionCastContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#multiplicativeExpression}.
+	 * Exit a parse tree produced by the {@code ExtensionCast}
+	 * labeled alternative in {@link CMieuxParser#castExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitMultiplicativeExpression(CMieuxParser.MultiplicativeExpressionContext ctx);
+	void exitExtensionCast(CMieuxParser.ExtensionCastContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#additiveExpression}.
+	 * Enter a parse tree produced by the {@code CastUnaryExpression}
+	 * labeled alternative in {@link CMieuxParser#castExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterAdditiveExpression(CMieuxParser.AdditiveExpressionContext ctx);
+	void enterCastUnaryExpression(CMieuxParser.CastUnaryExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#additiveExpression}.
+	 * Exit a parse tree produced by the {@code CastUnaryExpression}
+	 * labeled alternative in {@link CMieuxParser#castExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitAdditiveExpression(CMieuxParser.AdditiveExpressionContext ctx);
+	void exitCastUnaryExpression(CMieuxParser.CastUnaryExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#shiftExpression}.
+	 * Enter a parse tree produced by the {@code CastDigitSequence}
+	 * labeled alternative in {@link CMieuxParser#castExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterShiftExpression(CMieuxParser.ShiftExpressionContext ctx);
+	void enterCastDigitSequence(CMieuxParser.CastDigitSequenceContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#shiftExpression}.
+	 * Exit a parse tree produced by the {@code CastDigitSequence}
+	 * labeled alternative in {@link CMieuxParser#castExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitShiftExpression(CMieuxParser.ShiftExpressionContext ctx);
+	void exitCastDigitSequence(CMieuxParser.CastDigitSequenceContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#relationalExpression}.
+	 * Enter a parse tree produced by the {@code Mul_CastExpression}
+	 * labeled alternative in {@link CMieuxParser#multiplicativeExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterRelationalExpression(CMieuxParser.RelationalExpressionContext ctx);
+	void enterMul_CastExpression(CMieuxParser.Mul_CastExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#relationalExpression}.
+	 * Exit a parse tree produced by the {@code Mul_CastExpression}
+	 * labeled alternative in {@link CMieuxParser#multiplicativeExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitRelationalExpression(CMieuxParser.RelationalExpressionContext ctx);
+	void exitMul_CastExpression(CMieuxParser.Mul_CastExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#equalityExpression}.
+	 * Enter a parse tree produced by the {@code ModExpression}
+	 * labeled alternative in {@link CMieuxParser#multiplicativeExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterEqualityExpression(CMieuxParser.EqualityExpressionContext ctx);
+	void enterModExpression(CMieuxParser.ModExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#equalityExpression}.
+	 * Exit a parse tree produced by the {@code ModExpression}
+	 * labeled alternative in {@link CMieuxParser#multiplicativeExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitEqualityExpression(CMieuxParser.EqualityExpressionContext ctx);
+	void exitModExpression(CMieuxParser.ModExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#andExpression}.
+	 * Enter a parse tree produced by the {@code DivExpression}
+	 * labeled alternative in {@link CMieuxParser#multiplicativeExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterDivExpression(CMieuxParser.DivExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code DivExpression}
+	 * labeled alternative in {@link CMieuxParser#multiplicativeExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitDivExpression(CMieuxParser.DivExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code MulExpression}
+	 * labeled alternative in {@link CMieuxParser#multiplicativeExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterMulExpression(CMieuxParser.MulExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code MulExpression}
+	 * labeled alternative in {@link CMieuxParser#multiplicativeExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitMulExpression(CMieuxParser.MulExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code AddExpression}
+	 * labeled alternative in {@link CMieuxParser#additiveExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterAddExpression(CMieuxParser.AddExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code AddExpression}
+	 * labeled alternative in {@link CMieuxParser#additiveExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitAddExpression(CMieuxParser.AddExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code SubExpression}
+	 * labeled alternative in {@link CMieuxParser#additiveExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterSubExpression(CMieuxParser.SubExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code SubExpression}
+	 * labeled alternative in {@link CMieuxParser#additiveExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitSubExpression(CMieuxParser.SubExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Add_MulExpression}
+	 * labeled alternative in {@link CMieuxParser#additiveExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterAdd_MulExpression(CMieuxParser.Add_MulExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Add_MulExpression}
+	 * labeled alternative in {@link CMieuxParser#additiveExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitAdd_MulExpression(CMieuxParser.Add_MulExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code LShiftExpression}
+	 * labeled alternative in {@link CMieuxParser#shiftExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLShiftExpression(CMieuxParser.LShiftExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code LShiftExpression}
+	 * labeled alternative in {@link CMieuxParser#shiftExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLShiftExpression(CMieuxParser.LShiftExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code RShiftExpression}
+	 * labeled alternative in {@link CMieuxParser#shiftExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterRShiftExpression(CMieuxParser.RShiftExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code RShiftExpression}
+	 * labeled alternative in {@link CMieuxParser#shiftExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitRShiftExpression(CMieuxParser.RShiftExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Shift_AddExpression}
+	 * labeled alternative in {@link CMieuxParser#shiftExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterShift_AddExpression(CMieuxParser.Shift_AddExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Shift_AddExpression}
+	 * labeled alternative in {@link CMieuxParser#shiftExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitShift_AddExpression(CMieuxParser.Shift_AddExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code GTEExpression}
+	 * labeled alternative in {@link CMieuxParser#relationalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterGTEExpression(CMieuxParser.GTEExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code GTEExpression}
+	 * labeled alternative in {@link CMieuxParser#relationalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitGTEExpression(CMieuxParser.GTEExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code LTEExpression}
+	 * labeled alternative in {@link CMieuxParser#relationalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLTEExpression(CMieuxParser.LTEExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code LTEExpression}
+	 * labeled alternative in {@link CMieuxParser#relationalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLTEExpression(CMieuxParser.LTEExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code LTExpression}
+	 * labeled alternative in {@link CMieuxParser#relationalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterLTExpression(CMieuxParser.LTExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code LTExpression}
+	 * labeled alternative in {@link CMieuxParser#relationalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitLTExpression(CMieuxParser.LTExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Rel_ShiftExpression}
+	 * labeled alternative in {@link CMieuxParser#relationalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterRel_ShiftExpression(CMieuxParser.Rel_ShiftExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Rel_ShiftExpression}
+	 * labeled alternative in {@link CMieuxParser#relationalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitRel_ShiftExpression(CMieuxParser.Rel_ShiftExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code GTExpression}
+	 * labeled alternative in {@link CMieuxParser#relationalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterGTExpression(CMieuxParser.GTExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code GTExpression}
+	 * labeled alternative in {@link CMieuxParser#relationalExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitGTExpression(CMieuxParser.GTExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code NeqExpression}
+	 * labeled alternative in {@link CMieuxParser#equalityExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterNeqExpression(CMieuxParser.NeqExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code NeqExpression}
+	 * labeled alternative in {@link CMieuxParser#equalityExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitNeqExpression(CMieuxParser.NeqExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Eq_RelExpression}
+	 * labeled alternative in {@link CMieuxParser#equalityExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterEq_RelExpression(CMieuxParser.Eq_RelExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Eq_RelExpression}
+	 * labeled alternative in {@link CMieuxParser#equalityExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitEq_RelExpression(CMieuxParser.Eq_RelExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code EqExpression}
+	 * labeled alternative in {@link CMieuxParser#equalityExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterEqExpression(CMieuxParser.EqExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code EqExpression}
+	 * labeled alternative in {@link CMieuxParser#equalityExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitEqExpression(CMieuxParser.EqExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code BinaryAndExpression}
+	 * labeled alternative in {@link CMieuxParser#binAndExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryAndExpression(CMieuxParser.BinaryAndExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code BinaryAndExpression}
+	 * labeled alternative in {@link CMieuxParser#binAndExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryAndExpression(CMieuxParser.BinaryAndExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code BinaryAnd_EqExpression}
+	 * labeled alternative in {@link CMieuxParser#binAndExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryAnd_EqExpression(CMieuxParser.BinaryAnd_EqExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code BinaryAnd_EqExpression}
+	 * labeled alternative in {@link CMieuxParser#binAndExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryAnd_EqExpression(CMieuxParser.BinaryAnd_EqExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code XorExpression}
+	 * labeled alternative in {@link CMieuxParser#exclusiveOrExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterXorExpression(CMieuxParser.XorExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code XorExpression}
+	 * labeled alternative in {@link CMieuxParser#exclusiveOrExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitXorExpression(CMieuxParser.XorExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Xor_AndExpression}
+	 * labeled alternative in {@link CMieuxParser#exclusiveOrExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterXor_AndExpression(CMieuxParser.Xor_AndExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Xor_AndExpression}
+	 * labeled alternative in {@link CMieuxParser#exclusiveOrExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitXor_AndExpression(CMieuxParser.Xor_AndExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code BinaryOr_XorExpression}
+	 * labeled alternative in {@link CMieuxParser#inclusiveOrExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryOr_XorExpression(CMieuxParser.BinaryOr_XorExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code BinaryOr_XorExpression}
+	 * labeled alternative in {@link CMieuxParser#inclusiveOrExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryOr_XorExpression(CMieuxParser.BinaryOr_XorExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code BinaryOrExpression}
+	 * labeled alternative in {@link CMieuxParser#inclusiveOrExpression}.
+	 * @param ctx the parse tree
+	 */
+	void enterBinaryOrExpression(CMieuxParser.BinaryOrExpressionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code BinaryOrExpression}
+	 * labeled alternative in {@link CMieuxParser#inclusiveOrExpression}.
+	 * @param ctx the parse tree
+	 */
+	void exitBinaryOrExpression(CMieuxParser.BinaryOrExpressionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code AndExpression}
+	 * labeled alternative in {@link CMieuxParser#logicalAndExpression}.
 	 * @param ctx the parse tree
 	 */
 	void enterAndExpression(CMieuxParser.AndExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#andExpression}.
+	 * Exit a parse tree produced by the {@code AndExpression}
+	 * labeled alternative in {@link CMieuxParser#logicalAndExpression}.
 	 * @param ctx the parse tree
 	 */
 	void exitAndExpression(CMieuxParser.AndExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#exclusiveOrExpression}.
+	 * Enter a parse tree produced by the {@code And_BinaryOrExpression}
+	 * labeled alternative in {@link CMieuxParser#logicalAndExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterExclusiveOrExpression(CMieuxParser.ExclusiveOrExpressionContext ctx);
+	void enterAnd_BinaryOrExpression(CMieuxParser.And_BinaryOrExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#exclusiveOrExpression}.
+	 * Exit a parse tree produced by the {@code And_BinaryOrExpression}
+	 * labeled alternative in {@link CMieuxParser#logicalAndExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitExclusiveOrExpression(CMieuxParser.ExclusiveOrExpressionContext ctx);
+	void exitAnd_BinaryOrExpression(CMieuxParser.And_BinaryOrExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#inclusiveOrExpression}.
+	 * Enter a parse tree produced by the {@code Or_AndExpression}
+	 * labeled alternative in {@link CMieuxParser#logicalOrExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterInclusiveOrExpression(CMieuxParser.InclusiveOrExpressionContext ctx);
+	void enterOr_AndExpression(CMieuxParser.Or_AndExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#inclusiveOrExpression}.
+	 * Exit a parse tree produced by the {@code Or_AndExpression}
+	 * labeled alternative in {@link CMieuxParser#logicalOrExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitInclusiveOrExpression(CMieuxParser.InclusiveOrExpressionContext ctx);
+	void exitOr_AndExpression(CMieuxParser.Or_AndExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#logicalAndExpression}.
+	 * Enter a parse tree produced by the {@code OrExpression}
+	 * labeled alternative in {@link CMieuxParser#logicalOrExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterLogicalAndExpression(CMieuxParser.LogicalAndExpressionContext ctx);
+	void enterOrExpression(CMieuxParser.OrExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#logicalAndExpression}.
+	 * Exit a parse tree produced by the {@code OrExpression}
+	 * labeled alternative in {@link CMieuxParser#logicalOrExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitLogicalAndExpression(CMieuxParser.LogicalAndExpressionContext ctx);
+	void exitOrExpression(CMieuxParser.OrExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#logicalOrExpression}.
+	 * Enter a parse tree produced by the {@code Ternary_OrExpression}
+	 * labeled alternative in {@link CMieuxParser#conditionalExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterLogicalOrExpression(CMieuxParser.LogicalOrExpressionContext ctx);
+	void enterTernary_OrExpression(CMieuxParser.Ternary_OrExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#logicalOrExpression}.
+	 * Exit a parse tree produced by the {@code Ternary_OrExpression}
+	 * labeled alternative in {@link CMieuxParser#conditionalExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitLogicalOrExpression(CMieuxParser.LogicalOrExpressionContext ctx);
+	void exitTernary_OrExpression(CMieuxParser.Ternary_OrExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#conditionalExpression}.
+	 * Enter a parse tree produced by the {@code TernaryExpression}
+	 * labeled alternative in {@link CMieuxParser#conditionalExpression}.
 	 * @param ctx the parse tree
 	 */
-	void enterConditionalExpression(CMieuxParser.ConditionalExpressionContext ctx);
+	void enterTernaryExpression(CMieuxParser.TernaryExpressionContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#conditionalExpression}.
+	 * Exit a parse tree produced by the {@code TernaryExpression}
+	 * labeled alternative in {@link CMieuxParser#conditionalExpression}.
 	 * @param ctx the parse tree
 	 */
-	void exitConditionalExpression(CMieuxParser.ConditionalExpressionContext ctx);
+	void exitTernaryExpression(CMieuxParser.TernaryExpressionContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#assignmentExpression}.
 	 * @param ctx the parse tree
@@ -388,35 +994,125 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitStorageClassSpecifier(CMieuxParser.StorageClassSpecifierContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#typeSpecifier}.
+	 * Enter a parse tree produced by the {@code SimpleTypeSpecifier}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
 	 * @param ctx the parse tree
 	 */
-	void enterTypeSpecifier(CMieuxParser.TypeSpecifierContext ctx);
+	void enterSimpleTypeSpecifier(CMieuxParser.SimpleTypeSpecifierContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#typeSpecifier}.
+	 * Exit a parse tree produced by the {@code SimpleTypeSpecifier}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
 	 * @param ctx the parse tree
 	 */
-	void exitTypeSpecifier(CMieuxParser.TypeSpecifierContext ctx);
+	void exitSimpleTypeSpecifier(CMieuxParser.SimpleTypeSpecifierContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#structOrUnionSpecifier}.
+	 * Enter a parse tree produced by the {@code TypeSpecifier_Atomic}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
 	 * @param ctx the parse tree
 	 */
-	void enterStructOrUnionSpecifier(CMieuxParser.StructOrUnionSpecifierContext ctx);
+	void enterTypeSpecifier_Atomic(CMieuxParser.TypeSpecifier_AtomicContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#structOrUnionSpecifier}.
+	 * Exit a parse tree produced by the {@code TypeSpecifier_Atomic}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
 	 * @param ctx the parse tree
 	 */
-	void exitStructOrUnionSpecifier(CMieuxParser.StructOrUnionSpecifierContext ctx);
+	void exitTypeSpecifier_Atomic(CMieuxParser.TypeSpecifier_AtomicContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#structOrUnion}.
+	 * Enter a parse tree produced by the {@code PointerTypeSpecifier}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
 	 * @param ctx the parse tree
 	 */
-	void enterStructOrUnion(CMieuxParser.StructOrUnionContext ctx);
+	void enterPointerTypeSpecifier(CMieuxParser.PointerTypeSpecifierContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#structOrUnion}.
+	 * Exit a parse tree produced by the {@code PointerTypeSpecifier}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
 	 * @param ctx the parse tree
 	 */
-	void exitStructOrUnion(CMieuxParser.StructOrUnionContext ctx);
+	void exitPointerTypeSpecifier(CMieuxParser.PointerTypeSpecifierContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code TypeSpecifier_StructOrUnion}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypeSpecifier_StructOrUnion(CMieuxParser.TypeSpecifier_StructOrUnionContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code TypeSpecifier_StructOrUnion}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypeSpecifier_StructOrUnion(CMieuxParser.TypeSpecifier_StructOrUnionContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code TypeSpecifier_Enum}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypeSpecifier_Enum(CMieuxParser.TypeSpecifier_EnumContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code TypeSpecifier_Enum}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypeSpecifier_Enum(CMieuxParser.TypeSpecifier_EnumContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code TypeofTypeSpecifier}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypeofTypeSpecifier(CMieuxParser.TypeofTypeSpecifierContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code TypeofTypeSpecifier}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypeofTypeSpecifier(CMieuxParser.TypeofTypeSpecifierContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code TypeSpecifier_TypedefName}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterTypeSpecifier_TypedefName(CMieuxParser.TypeSpecifier_TypedefNameContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code TypeSpecifier_TypedefName}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitTypeSpecifier_TypedefName(CMieuxParser.TypeSpecifier_TypedefNameContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ExtensionTypeSpecifier}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterExtensionTypeSpecifier(CMieuxParser.ExtensionTypeSpecifierContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ExtensionTypeSpecifier}
+	 * labeled alternative in {@link CMieuxParser#typeSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitExtensionTypeSpecifier(CMieuxParser.ExtensionTypeSpecifierContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code StructSpecifier}
+	 * labeled alternative in {@link CMieuxParser#structOrUnionSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterStructSpecifier(CMieuxParser.StructSpecifierContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code StructSpecifier}
+	 * labeled alternative in {@link CMieuxParser#structOrUnionSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitStructSpecifier(CMieuxParser.StructSpecifierContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code UnionSpecifier}
+	 * labeled alternative in {@link CMieuxParser#structOrUnionSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterUnionSpecifier(CMieuxParser.UnionSpecifierContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code UnionSpecifier}
+	 * labeled alternative in {@link CMieuxParser#structOrUnionSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitUnionSpecifier(CMieuxParser.UnionSpecifierContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#structDeclarationList}.
 	 * @param ctx the parse tree
@@ -468,15 +1164,29 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitStructDeclarator(CMieuxParser.StructDeclaratorContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#enumSpecifier}.
+	 * Enter a parse tree produced by the {@code Enum}
+	 * labeled alternative in {@link CMieuxParser#enumSpecifier}.
 	 * @param ctx the parse tree
 	 */
-	void enterEnumSpecifier(CMieuxParser.EnumSpecifierContext ctx);
+	void enterEnum(CMieuxParser.EnumContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#enumSpecifier}.
+	 * Exit a parse tree produced by the {@code Enum}
+	 * labeled alternative in {@link CMieuxParser#enumSpecifier}.
 	 * @param ctx the parse tree
 	 */
-	void exitEnumSpecifier(CMieuxParser.EnumSpecifierContext ctx);
+	void exitEnum(CMieuxParser.EnumContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code EnumType}
+	 * labeled alternative in {@link CMieuxParser#enumSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterEnumType(CMieuxParser.EnumTypeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code EnumType}
+	 * labeled alternative in {@link CMieuxParser#enumSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitEnumType(CMieuxParser.EnumTypeContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#enumeratorList}.
 	 * @param ctx the parse tree
@@ -528,15 +1238,41 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitTypeQualifier(CMieuxParser.TypeQualifierContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#functionSpecifier}.
+	 * Enter a parse tree produced by the {@code FunctionAttribute}
+	 * labeled alternative in {@link CMieuxParser#functionSpecifier}.
 	 * @param ctx the parse tree
 	 */
-	void enterFunctionSpecifier(CMieuxParser.FunctionSpecifierContext ctx);
+	void enterFunctionAttribute(CMieuxParser.FunctionAttributeContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#functionSpecifier}.
+	 * Exit a parse tree produced by the {@code FunctionAttribute}
+	 * labeled alternative in {@link CMieuxParser#functionSpecifier}.
 	 * @param ctx the parse tree
 	 */
-	void exitFunctionSpecifier(CMieuxParser.FunctionSpecifierContext ctx);
+	void exitFunctionAttribute(CMieuxParser.FunctionAttributeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code GCCFunctionAttribute}
+	 * labeled alternative in {@link CMieuxParser#functionSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterGCCFunctionAttribute(CMieuxParser.GCCFunctionAttributeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code GCCFunctionAttribute}
+	 * labeled alternative in {@link CMieuxParser#functionSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitGCCFunctionAttribute(CMieuxParser.GCCFunctionAttributeContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code DeclSpecAttribute}
+	 * labeled alternative in {@link CMieuxParser#functionSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void enterDeclSpecAttribute(CMieuxParser.DeclSpecAttributeContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code DeclSpecAttribute}
+	 * labeled alternative in {@link CMieuxParser#functionSpecifier}.
+	 * @param ctx the parse tree
+	 */
+	void exitDeclSpecAttribute(CMieuxParser.DeclSpecAttributeContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#alignmentSpecifier}.
 	 * @param ctx the parse tree
@@ -558,15 +1294,125 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitDeclarator(CMieuxParser.DeclaratorContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#directDeclarator}.
+	 * Enter a parse tree produced by the {@code FunctionDeclaratorArgNamesOnly}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
 	 * @param ctx the parse tree
 	 */
-	void enterDirectDeclarator(CMieuxParser.DirectDeclaratorContext ctx);
+	void enterFunctionDeclaratorArgNamesOnly(CMieuxParser.FunctionDeclaratorArgNamesOnlyContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#directDeclarator}.
+	 * Exit a parse tree produced by the {@code FunctionDeclaratorArgNamesOnly}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
 	 * @param ctx the parse tree
 	 */
-	void exitDirectDeclarator(CMieuxParser.DirectDeclaratorContext ctx);
+	void exitFunctionDeclaratorArgNamesOnly(CMieuxParser.FunctionDeclaratorArgNamesOnlyContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code BitField}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterBitField(CMieuxParser.BitFieldContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code BitField}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitBitField(CMieuxParser.BitFieldContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FunctionPointer}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctionPointer(CMieuxParser.FunctionPointerContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FunctionPointer}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctionPointer(CMieuxParser.FunctionPointerContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayDeclarator1}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayDeclarator1(CMieuxParser.ArrayDeclarator1Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayDeclarator1}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayDeclarator1(CMieuxParser.ArrayDeclarator1Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code VariableName}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterVariableName(CMieuxParser.VariableNameContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code VariableName}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitVariableName(CMieuxParser.VariableNameContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayDeclarator2}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayDeclarator2(CMieuxParser.ArrayDeclarator2Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayDeclarator2}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayDeclarator2(CMieuxParser.ArrayDeclarator2Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayDeclarator3}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayDeclarator3(CMieuxParser.ArrayDeclarator3Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayDeclarator3}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayDeclarator3(CMieuxParser.ArrayDeclarator3Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayDeclarator4}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayDeclarator4(CMieuxParser.ArrayDeclarator4Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayDeclarator4}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayDeclarator4(CMieuxParser.ArrayDeclarator4Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ParenDeclarator}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterParenDeclarator(CMieuxParser.ParenDeclaratorContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ParenDeclarator}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitParenDeclarator(CMieuxParser.ParenDeclaratorContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FunctionDeclarator}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctionDeclarator(CMieuxParser.FunctionDeclaratorContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FunctionDeclarator}
+	 * labeled alternative in {@link CMieuxParser#directDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctionDeclarator(CMieuxParser.FunctionDeclaratorContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#gccDeclaratorExtension}.
 	 * @param ctx the parse tree
@@ -577,6 +1423,16 @@ public interface CMieuxListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitGccDeclaratorExtension(CMieuxParser.GccDeclaratorExtensionContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#gccAsmDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterGccAsmDeclarator(CMieuxParser.GccAsmDeclaratorContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#gccAsmDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitGccAsmDeclarator(CMieuxParser.GccAsmDeclaratorContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#gccAttributeSpecifier}.
 	 * @param ctx the parse tree
@@ -608,25 +1464,29 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitGccAttribute(CMieuxParser.GccAttributeContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#nestedParenthesesBlock}.
+	 * Enter a parse tree produced by the {@code PointerComponent}
+	 * labeled alternative in {@link CMieuxParser#pointer}.
 	 * @param ctx the parse tree
 	 */
-	void enterNestedParenthesesBlock(CMieuxParser.NestedParenthesesBlockContext ctx);
+	void enterPointerComponent(CMieuxParser.PointerComponentContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#nestedParenthesesBlock}.
+	 * Exit a parse tree produced by the {@code PointerComponent}
+	 * labeled alternative in {@link CMieuxParser#pointer}.
 	 * @param ctx the parse tree
 	 */
-	void exitNestedParenthesesBlock(CMieuxParser.NestedParenthesesBlockContext ctx);
+	void exitPointerComponent(CMieuxParser.PointerComponentContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#pointer}.
+	 * Enter a parse tree produced by the {@code BlockPointerComponent}
+	 * labeled alternative in {@link CMieuxParser#pointer}.
 	 * @param ctx the parse tree
 	 */
-	void enterPointer(CMieuxParser.PointerContext ctx);
+	void enterBlockPointerComponent(CMieuxParser.BlockPointerComponentContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#pointer}.
+	 * Exit a parse tree produced by the {@code BlockPointerComponent}
+	 * labeled alternative in {@link CMieuxParser#pointer}.
 	 * @param ctx the parse tree
 	 */
-	void exitPointer(CMieuxParser.PointerContext ctx);
+	void exitBlockPointerComponent(CMieuxParser.BlockPointerComponentContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#typeQualifierList}.
 	 * @param ctx the parse tree
@@ -638,15 +1498,29 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitTypeQualifierList(CMieuxParser.TypeQualifierListContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#parameterTypeList}.
+	 * Enter a parse tree produced by the {@code SimpleParameterList}
+	 * labeled alternative in {@link CMieuxParser#parameterTypeList}.
 	 * @param ctx the parse tree
 	 */
-	void enterParameterTypeList(CMieuxParser.ParameterTypeListContext ctx);
+	void enterSimpleParameterList(CMieuxParser.SimpleParameterListContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#parameterTypeList}.
+	 * Exit a parse tree produced by the {@code SimpleParameterList}
+	 * labeled alternative in {@link CMieuxParser#parameterTypeList}.
 	 * @param ctx the parse tree
 	 */
-	void exitParameterTypeList(CMieuxParser.ParameterTypeListContext ctx);
+	void exitSimpleParameterList(CMieuxParser.SimpleParameterListContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code VarArgParameterList}
+	 * labeled alternative in {@link CMieuxParser#parameterTypeList}.
+	 * @param ctx the parse tree
+	 */
+	void enterVarArgParameterList(CMieuxParser.VarArgParameterListContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code VarArgParameterList}
+	 * labeled alternative in {@link CMieuxParser#parameterTypeList}.
+	 * @param ctx the parse tree
+	 */
+	void exitVarArgParameterList(CMieuxParser.VarArgParameterListContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#parameterList}.
 	 * @param ctx the parse tree
@@ -658,15 +1532,29 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitParameterList(CMieuxParser.ParameterListContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#parameterDeclaration}.
+	 * Enter a parse tree produced by the {@code SimpleParameterDeclaration}
+	 * labeled alternative in {@link CMieuxParser#parameterDeclaration}.
 	 * @param ctx the parse tree
 	 */
-	void enterParameterDeclaration(CMieuxParser.ParameterDeclarationContext ctx);
+	void enterSimpleParameterDeclaration(CMieuxParser.SimpleParameterDeclarationContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#parameterDeclaration}.
+	 * Exit a parse tree produced by the {@code SimpleParameterDeclaration}
+	 * labeled alternative in {@link CMieuxParser#parameterDeclaration}.
 	 * @param ctx the parse tree
 	 */
-	void exitParameterDeclaration(CMieuxParser.ParameterDeclarationContext ctx);
+	void exitSimpleParameterDeclaration(CMieuxParser.SimpleParameterDeclarationContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code AbstractParameterDeclaration}
+	 * labeled alternative in {@link CMieuxParser#parameterDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void enterAbstractParameterDeclaration(CMieuxParser.AbstractParameterDeclarationContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code AbstractParameterDeclaration}
+	 * labeled alternative in {@link CMieuxParser#parameterDeclaration}.
+	 * @param ctx the parse tree
+	 */
+	void exitAbstractParameterDeclaration(CMieuxParser.AbstractParameterDeclarationContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#identifierList}.
 	 * @param ctx the parse tree
@@ -698,15 +1586,137 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitAbstractDeclarator(CMieuxParser.AbstractDeclaratorContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#directAbstractDeclarator}.
+	 * Enter a parse tree produced by the {@code ArrayAbstractDeclarator4}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
 	 * @param ctx the parse tree
 	 */
-	void enterDirectAbstractDeclarator(CMieuxParser.DirectAbstractDeclaratorContext ctx);
+	void enterArrayAbstractDeclarator4(CMieuxParser.ArrayAbstractDeclarator4Context ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#directAbstractDeclarator}.
+	 * Exit a parse tree produced by the {@code ArrayAbstractDeclarator4}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
 	 * @param ctx the parse tree
 	 */
-	void exitDirectAbstractDeclarator(CMieuxParser.DirectAbstractDeclaratorContext ctx);
+	void exitArrayAbstractDeclarator4(CMieuxParser.ArrayAbstractDeclarator4Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayAbstractDeclarator5}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayAbstractDeclarator5(CMieuxParser.ArrayAbstractDeclarator5Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayAbstractDeclarator5}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayAbstractDeclarator5(CMieuxParser.ArrayAbstractDeclarator5Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayAbstractDeclarator6}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayAbstractDeclarator6(CMieuxParser.ArrayAbstractDeclarator6Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayAbstractDeclarator6}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayAbstractDeclarator6(CMieuxParser.ArrayAbstractDeclarator6Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FunctionAbstractDeclarator2}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctionAbstractDeclarator2(CMieuxParser.FunctionAbstractDeclarator2Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FunctionAbstractDeclarator2}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctionAbstractDeclarator2(CMieuxParser.FunctionAbstractDeclarator2Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code FunctionAbstractDeclarator1}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterFunctionAbstractDeclarator1(CMieuxParser.FunctionAbstractDeclarator1Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code FunctionAbstractDeclarator1}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitFunctionAbstractDeclarator1(CMieuxParser.FunctionAbstractDeclarator1Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayAbstractDeclarator7}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayAbstractDeclarator7(CMieuxParser.ArrayAbstractDeclarator7Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayAbstractDeclarator7}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayAbstractDeclarator7(CMieuxParser.ArrayAbstractDeclarator7Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayAbstractDeclarator8}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayAbstractDeclarator8(CMieuxParser.ArrayAbstractDeclarator8Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayAbstractDeclarator8}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayAbstractDeclarator8(CMieuxParser.ArrayAbstractDeclarator8Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ParenAbstractDeclarator}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterParenAbstractDeclarator(CMieuxParser.ParenAbstractDeclaratorContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ParenAbstractDeclarator}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitParenAbstractDeclarator(CMieuxParser.ParenAbstractDeclaratorContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayAbstractDeclarator1}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayAbstractDeclarator1(CMieuxParser.ArrayAbstractDeclarator1Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayAbstractDeclarator1}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayAbstractDeclarator1(CMieuxParser.ArrayAbstractDeclarator1Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayAbstractDeclarator2}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayAbstractDeclarator2(CMieuxParser.ArrayAbstractDeclarator2Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayAbstractDeclarator2}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayAbstractDeclarator2(CMieuxParser.ArrayAbstractDeclarator2Context ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ArrayAbstractDeclarator3}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayAbstractDeclarator3(CMieuxParser.ArrayAbstractDeclarator3Context ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ArrayAbstractDeclarator3}
+	 * labeled alternative in {@link CMieuxParser#directAbstractDeclarator}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayAbstractDeclarator3(CMieuxParser.ArrayAbstractDeclarator3Context ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#typedefName}.
 	 * @param ctx the parse tree
@@ -728,6 +1738,16 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitInitializer(CMieuxParser.InitializerContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#arrayOrStructInitializer}.
+	 * @param ctx the parse tree
+	 */
+	void enterArrayOrStructInitializer(CMieuxParser.ArrayOrStructInitializerContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#arrayOrStructInitializer}.
+	 * @param ctx the parse tree
+	 */
+	void exitArrayOrStructInitializer(CMieuxParser.ArrayOrStructInitializerContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#initializerList}.
 	 * @param ctx the parse tree
 	 */
@@ -738,35 +1758,45 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitInitializerList(CMieuxParser.InitializerListContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#designation}.
+	 * Enter a parse tree produced by {@link CMieuxParser#initializerListItem}.
 	 * @param ctx the parse tree
 	 */
-	void enterDesignation(CMieuxParser.DesignationContext ctx);
+	void enterInitializerListItem(CMieuxParser.InitializerListItemContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#designation}.
+	 * Exit a parse tree produced by {@link CMieuxParser#initializerListItem}.
 	 * @param ctx the parse tree
 	 */
-	void exitDesignation(CMieuxParser.DesignationContext ctx);
+	void exitInitializerListItem(CMieuxParser.InitializerListItemContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#designatorList}.
+	 * Enter a parse tree produced by {@link CMieuxParser#arrayElementInit}.
 	 * @param ctx the parse tree
 	 */
-	void enterDesignatorList(CMieuxParser.DesignatorListContext ctx);
+	void enterArrayElementInit(CMieuxParser.ArrayElementInitContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#designatorList}.
+	 * Exit a parse tree produced by {@link CMieuxParser#arrayElementInit}.
 	 * @param ctx the parse tree
 	 */
-	void exitDesignatorList(CMieuxParser.DesignatorListContext ctx);
+	void exitArrayElementInit(CMieuxParser.ArrayElementInitContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#designator}.
+	 * Enter a parse tree produced by {@link CMieuxParser#arrayIndexedInit}.
 	 * @param ctx the parse tree
 	 */
-	void enterDesignator(CMieuxParser.DesignatorContext ctx);
+	void enterArrayIndexedInit(CMieuxParser.ArrayIndexedInitContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#designator}.
+	 * Exit a parse tree produced by {@link CMieuxParser#arrayIndexedInit}.
 	 * @param ctx the parse tree
 	 */
-	void exitDesignator(CMieuxParser.DesignatorContext ctx);
+	void exitArrayIndexedInit(CMieuxParser.ArrayIndexedInitContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#structFieldInit}.
+	 * @param ctx the parse tree
+	 */
+	void enterStructFieldInit(CMieuxParser.StructFieldInitContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#structFieldInit}.
+	 * @param ctx the parse tree
+	 */
+	void exitStructFieldInit(CMieuxParser.StructFieldInitContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#staticAssertDeclaration}.
 	 * @param ctx the parse tree
@@ -788,15 +1818,51 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitStatement(CMieuxParser.StatementContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#labeledStatement}.
+	 * Enter a parse tree produced by {@link CMieuxParser#asmStatement}.
 	 * @param ctx the parse tree
 	 */
-	void enterLabeledStatement(CMieuxParser.LabeledStatementContext ctx);
+	void enterAsmStatement(CMieuxParser.AsmStatementContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#labeledStatement}.
+	 * Exit a parse tree produced by {@link CMieuxParser#asmStatement}.
 	 * @param ctx the parse tree
 	 */
-	void exitLabeledStatement(CMieuxParser.LabeledStatementContext ctx);
+	void exitAsmStatement(CMieuxParser.AsmStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code Label}
+	 * labeled alternative in {@link CMieuxParser#labeledStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterLabel(CMieuxParser.LabelContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code Label}
+	 * labeled alternative in {@link CMieuxParser#labeledStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitLabel(CMieuxParser.LabelContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code CaseLabel}
+	 * labeled alternative in {@link CMieuxParser#labeledStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterCaseLabel(CMieuxParser.CaseLabelContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code CaseLabel}
+	 * labeled alternative in {@link CMieuxParser#labeledStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitCaseLabel(CMieuxParser.CaseLabelContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code CaseDefaultLabel}
+	 * labeled alternative in {@link CMieuxParser#labeledStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterCaseDefaultLabel(CMieuxParser.CaseDefaultLabelContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code CaseDefaultLabel}
+	 * labeled alternative in {@link CMieuxParser#labeledStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitCaseDefaultLabel(CMieuxParser.CaseDefaultLabelContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#compoundStatement}.
 	 * @param ctx the parse tree
@@ -807,16 +1873,6 @@ public interface CMieuxListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitCompoundStatement(CMieuxParser.CompoundStatementContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#blockItemList}.
-	 * @param ctx the parse tree
-	 */
-	void enterBlockItemList(CMieuxParser.BlockItemListContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#blockItemList}.
-	 * @param ctx the parse tree
-	 */
-	void exitBlockItemList(CMieuxParser.BlockItemListContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#blockItem}.
 	 * @param ctx the parse tree
@@ -888,15 +1944,65 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitForExpression(CMieuxParser.ForExpressionContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#jumpStatement}.
+	 * Enter a parse tree produced by the {@code GotoStatement}
+	 * labeled alternative in {@link CMieuxParser#jumpStatement}.
 	 * @param ctx the parse tree
 	 */
-	void enterJumpStatement(CMieuxParser.JumpStatementContext ctx);
+	void enterGotoStatement(CMieuxParser.GotoStatementContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#jumpStatement}.
+	 * Exit a parse tree produced by the {@code GotoStatement}
+	 * labeled alternative in {@link CMieuxParser#jumpStatement}.
 	 * @param ctx the parse tree
 	 */
-	void exitJumpStatement(CMieuxParser.JumpStatementContext ctx);
+	void exitGotoStatement(CMieuxParser.GotoStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ContinueStatement}
+	 * labeled alternative in {@link CMieuxParser#jumpStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterContinueStatement(CMieuxParser.ContinueStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ContinueStatement}
+	 * labeled alternative in {@link CMieuxParser#jumpStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitContinueStatement(CMieuxParser.ContinueStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code BreakStatement}
+	 * labeled alternative in {@link CMieuxParser#jumpStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterBreakStatement(CMieuxParser.BreakStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code BreakStatement}
+	 * labeled alternative in {@link CMieuxParser#jumpStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitBreakStatement(CMieuxParser.BreakStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ReturnStatement}
+	 * labeled alternative in {@link CMieuxParser#jumpStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterReturnStatement(CMieuxParser.ReturnStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ReturnStatement}
+	 * labeled alternative in {@link CMieuxParser#jumpStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitReturnStatement(CMieuxParser.ReturnStatementContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code GCCDynamicGotoStatement}
+	 * labeled alternative in {@link CMieuxParser#jumpStatement}.
+	 * @param ctx the parse tree
+	 */
+	void enterGCCDynamicGotoStatement(CMieuxParser.GCCDynamicGotoStatementContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code GCCDynamicGotoStatement}
+	 * labeled alternative in {@link CMieuxParser#jumpStatement}.
+	 * @param ctx the parse tree
+	 */
+	void exitGCCDynamicGotoStatement(CMieuxParser.GCCDynamicGotoStatementContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#compilationUnit}.
 	 * @param ctx the parse tree
@@ -908,15 +2014,15 @@ public interface CMieuxListener extends ParseTreeListener {
 	 */
 	void exitCompilationUnit(CMieuxParser.CompilationUnitContext ctx);
 	/**
-	 * Enter a parse tree produced by {@link CMieuxParser#translationUnit}.
+	 * Enter a parse tree produced by {@link CMieuxParser#topLevelStatement}.
 	 * @param ctx the parse tree
 	 */
-	void enterTranslationUnit(CMieuxParser.TranslationUnitContext ctx);
+	void enterTopLevelStatement(CMieuxParser.TopLevelStatementContext ctx);
 	/**
-	 * Exit a parse tree produced by {@link CMieuxParser#translationUnit}.
+	 * Exit a parse tree produced by {@link CMieuxParser#topLevelStatement}.
 	 * @param ctx the parse tree
 	 */
-	void exitTranslationUnit(CMieuxParser.TranslationUnitContext ctx);
+	void exitTopLevelStatement(CMieuxParser.TopLevelStatementContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link CMieuxParser#externalDeclaration}.
 	 * @param ctx the parse tree
@@ -947,4 +2053,14 @@ public interface CMieuxListener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitDeclarationList(CMieuxParser.DeclarationListContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link CMieuxParser#digitSequence}.
+	 * @param ctx the parse tree
+	 */
+	void enterDigitSequence(CMieuxParser.DigitSequenceContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link CMieuxParser#digitSequence}.
+	 * @param ctx the parse tree
+	 */
+	void exitDigitSequence(CMieuxParser.DigitSequenceContext ctx);
 }
